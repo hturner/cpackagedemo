@@ -12,3 +12,19 @@ double my_c_sum(const double* x, size_t n)
     }
     return s;
 }
+
+/* computes the index of the greatest element in a numeric vector. */
+int my_which_max(const double* x, size_t n)
+{
+    int w = 0;
+    double v = x[0];
+    
+    for (size_t i = 1; i < n; i++) {
+        /* this code does not handle NAs */
+        if (x[i] > v) {
+            v = x[i];
+            w = i;
+        }
+    }
+    return w + 1; /* add 1 for 1-based indexing */
+}

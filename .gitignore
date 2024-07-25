@@ -2,3 +2,4 @@ src/*.o
 src/*.so
 ..Rcheck
 src/symbols.rds
+.Rproj.user

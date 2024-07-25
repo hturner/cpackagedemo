@@ -6,4 +6,6 @@
 
 SEXP my_c_sum_wrapper(SEXP x);
 
+SEXP my_which_max_wrapper(SEXP x);
+
 #endif
